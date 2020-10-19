@@ -37,8 +37,8 @@ def get_point_cloud(depth_frame, color_frame, pc, decimate, colorizer):
 
     points = np.reshape(verts, (76800, 3))
 
-    points[:, [1, 2]] = points[:, [2, 1]] 
-    points[:, [2]] *= -1.0
+    # points[:, [1, 2]] = points[:, [2, 1]] 
+    # points[:, [2]] *= -1.0
 
     return verts, texcoords, points
 

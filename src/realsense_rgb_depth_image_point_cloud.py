@@ -66,7 +66,9 @@ bridge = CvBridge()
 parser = argparse.ArgumentParser()
 parser.add_argument("--voxel_size", "-v", help="set voxel_size for filtration", type=float, default=0.01)
 
-args = parser.parse_args()
+#args = parser.parse_args()
+
+args, unknown = parser.parse_known_args()
 
 print("Start node")
 
